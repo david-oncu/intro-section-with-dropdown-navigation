@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <title>Intro section with dropdown navigation</title>
+
+</head>
+<body>
+
+  <header class="header">
+    <img class="header-logo" src="/images/logo.svg" alt="Snap logo">
+
+    <div aria-controls="primary-navigation" aria-expanded="false" class="mobile-menu-btn" id="mobile-menu-btn">
+      <img class="mobile-icon-open" id="mobile-open" src="/images/icon-menu.svg" alt="Menu">
+      <img class="mobile-icon-close" id="mobile-close" src="/images/icon-close-menu.svg" alt="Close Menu">
+    </div>
+
+    <div class="primary-navigation-container" id="primary-navigation" data-visible="false" >
+      <nav class="primary-navigation" >
+        <ul class="primary-navigation-left">
+          <li class="dropdown-container">
+            <a class="primary-navigation-link" href="#">Features<i class="fas fa-chevron-down"></i></a>
+            <div class="primary-navigation-left-features-dropdown dropdown">
+              <ul>
+                <li><a href="#"><img src="/images/icon-todo.svg" alt="" aria-hidden="true">Todo List</a></li>
+                <li><a href="#"><img src="/images/icon-calendar.svg" alt="" aria-hidden="true">Calendar</a></li>
+                <li><a href="#"><img src="/images/icon-reminders.svg" alt="" aria-hidden="true">Reminders</a></li>
+                <li><a href="#"><img src="/images/icon-planning.svg" alt="" aria-hidden="true">Planning</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="dropdown-container">
+            <a class="primary-navigation-link" href="#">Company<i class="fas fa-chevron-down"></i></a>
+            <div class="primary-navigation-left-company-dropdown dropdown">
+              <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="primary-navigation-link" href="#">Careers</a></li>
+          <li><a class="primary-navigation-link" href="#">About</a></li>
+        </ul>
+        <ul class="primary-navigation-right">
+          <li class="primary-navigation-btn login"><a href="#" class="primary-navigation-btn">Login</a></li>
+          <li class="primary-navigation-btn register"><a href="#" class="primary-navigation-btn primary-navigation-register">Register</a></li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+
+
+  <main class="main-container">
+    <div class="main-img-container">
+      <img class="main-img-mobile main-img" src="/images/image-hero-mobile.png" alt="Man Holding a Laptop Snap">
+      <img class="main-img-desktop main-img" src="/images/image-hero-desktop.png" alt="Man Holding a Laptop Snap">
+    </div>
+    <div class="main-content-container">
+      <h1 class="main-title">Make remote work</h1>
+      <p class="main-text">
+        Get your team in sync, no matter your location. Streamline processes,
+        create team rituals, and watch productivity soar.
+      </p>
+      <a href="#" class="main-btn">Learn more</a>
+      <div class="main-sponsors">
+        <img class="main-sponsor-image" src="/images/client-databiz.svg" alt="" aria-hidden="true">
+        <img class="main-sponsor-image" src="/images/client-audiophile.svg" alt="" aria-hidden="true">
+        <img class="main-sponsor-image" src="/images/client-meet.svg" alt="" aria-hidden="true">
+        <img class="main-sponsor-image" src="/images/client-maker.svg" alt="" aria-hidden="true">
+      </div>
+    </div>
+  </main>
+  
+  <script src="/script.js"></script>
+</body>
+</html>
