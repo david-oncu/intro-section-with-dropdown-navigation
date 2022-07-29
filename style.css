@@ -54,6 +54,10 @@ li{
     list-style: none;
 }
 
+html{
+    background-color: var(--clr-white);
+}
+
 .sr-only {
 	border: 0 !important;
 	clip: rect(1px, 1px, 1px, 1px) !important;
@@ -431,8 +435,6 @@ li{
         margin-top: 5rem;
         margin-inline: 2rem;
     }
-
-    
 
     .primary-navigation-left li {
         width: 100%;
